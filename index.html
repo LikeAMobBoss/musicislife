@@ -8,54 +8,37 @@
 
 <body>
   <nav class="navbar navbar-invert">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <h3 class="navbar-brand" href="#">Music Is Fun</h3>
-            </div>
+        <h3 class="navbar-brand" href="#">Music Is Fun</h3>
+      </div>
 
-              <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
-                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                <div class="form-group">
-                  <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                  <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-                </div>
-              </form>
+      <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+        <div class="form-group">
+          <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+          <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+        </div>
+      </form>
 
-            
-            </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-  <div class="container">
-
-
-
-
-
-
-
-    <div id="songlists">
-      <!--SONGS ADDED DYNAMICALLY HERE-->
 
     </div>
-
-
+    <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <div class="container">
+    <div id="songlists">
+      <!--SONGS ADDED DYNAMICALLY HERE-->
+    </div>
   </div>
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="itunes-service.js"></script>
   <script src="app.js"></script>
